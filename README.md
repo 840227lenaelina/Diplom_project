@@ -32,4 +32,9 @@
 ### Шаги:
 1. [Склонировать репрозиторий github](https://github.com/840227lenaelina/Diplom_project.git)
 2. Установить зависимости из файла requirements.txt
-3. Провести тестирование
+3. Провести тестирование:
+ - Запуск всех тестов: pytest -v
+ - Запуск только UI тестов: pytest Tests/test_ui.py -m "ui" --alluredir=allure-results
+ - Запуск только API тестов: pytest Tests/test_api.py -m "api" --alluredir=allure-results
+4. Сгенерировать отчет Allure: allure serve allure-results
+5. Изменить тестовые данные можно в файле: Config.test_data.py
